@@ -1,12 +1,12 @@
 ## Preparação do ambiente
 
 * Requisitos
-** 10GB HD (30GB+ recomendado)
-** Do not use FAT32 filesystem (ext3/NTFS recomendado)
-** Host >> 1GB (2GB+ recomendado)
-** Kali VM >> 512MB (1GB+ recomendado)
-** Metasploitable VM >> 256MB (512MB+ recomendado)
-** Windows VM >> 256MB (1GB+ recomendado)
+- 10GB HD (30GB+ recomendado)
+- Do not use FAT32 filesystem (ext3/NTFS recomendado)
+- Host >> 1GB (2GB+ recomendado)
+- Kali VM >> 512MB (1GB+ recomendado)
+- Metasploitable VM >> 256MB (512MB+ recomendado)
+- Windows VM >> 256MB (1GB+ recomendado)
 
 * Type 2 hypervisor (VirtualBox or VMware recomendado)
 * Metasploitable2 VM - [Download aqui](https://information.rapid7.com/metasploitable-download.html)
