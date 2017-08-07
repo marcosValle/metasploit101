@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+                    <textarea data-template>
+                        # IMESEC
+                        ## Metasploit 101
+                        #### 11/08/17
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                       ##  Referências
+                        * [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/)
+                        * [Penetration Testing: A Hands-On Introduction to Hacking](https://www.amazon.com/Penetration-Testing-Hands-Introduction-Hacking/dp/1593275641)
+                        * XP
+                    </textarea>
+                </section>
+
+				<section data-markdown>
+                    <textarea data-template>
+                        ## WTF?
+                        * God of Frameworks
+                        * Opensource (Rapid7)
+                        * 1000+ exploits
+                        * 260+ payloads
+                        * 460+ auxiliares
+                    </textarea>
+                </section>
+
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Fases do Pentest
+                        <img style="width: 60%; height: 60%" data-src="img/ptphases.png">
+                    </textarea>
+                </section>
+
+
+				<section data-markdown>
+                    <textarea data-template>
+                        # Arquitetura
+                    </textarea>
+                </section>
+
+				<section data-markdown>
+                    <textarea data-template>
+                          <img data-src="img/msfarch2.png">
+                    </textarea>
+                </section>
+
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Bibliotecas
+                        * REX
+                        * msf::core
+                        * msf::base
+                        * msf::UI
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Módulos
+                        * Auxiliary
+                        * Encoder
+                        * Nops
+                        * Exploit
+                        * Payload
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Payloads, encoders, Nops
+                        * Payload é um código executado remotamente
+                        * Encoders garantem que os payloads vão chegar ao destinatário
+                        * Nops mantêm os tamanhos dos payloads consistentes
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Exploit
+                        * Módulos que usam payloads
+                        * Um exploit sem payload é um módulo auxiliar
+                    </textarea>
+                </section>
+
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Interfaces
+                        * msfcli (deprecated)
+                        * msfconsole
+                        * msfweb
+                        * Armitage (GUI)
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        # Preparação do ambiente
+                        * README.md
+                    </textarea>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
